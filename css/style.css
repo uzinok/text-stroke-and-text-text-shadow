@@ -1,0 +1,55 @@
+body {
+	margin: 0;
+	background-image: url(../img/clouds.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	min-height: 100vh;
+}
+
+
+.text {
+	margin: 10px 20px 30px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100px;
+	font-weight: 700;
+}
+
+.text-1 {
+	text-shadow: -5px -5px 0 #000;
+	color: transparent;
+	-webkit-text-stroke: 2px #000;
+}
+
+.text-2 {
+	position: relative;
+}
+
+.text-2-second {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 100%;
+
+	color: transparent;
+	-webkit-text-stroke: 2px rgb(28, 179, 78);
+	z-index: -1;
+}
+
+.text-3 {
+	position: relative;
+}
+
+.text-3::before {
+	content: attr(data-text);
+
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 100%;
+
+	color: transparent;
+	-webkit-text-stroke: 2px rgb(28, 179, 78);
+	z-index: -1;
+}
